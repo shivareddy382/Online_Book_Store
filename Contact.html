@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Form</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<script>
+			function shiva()
+			{
+				var name = document.forms["Contact_Form"]["Name"].value;
+				var spl = /^[a-zA-Z]+$/;
+				var mobile = document.forms["Contact_Form"]["Mobile_Number"].value;
+				var email = document.forms["Contact_Form"]["Email"].value;
+				atpos = email.indexOf("@");
+				dotpos = email.indexOf(".");
+				var address = document.forms["Contact_Form"]["Address"].value;
+				var problem = document.forms["Contact_Form"]["Problem"].value;
+				
+				if(name == null || name == "")
+				{
+					alert("Name must given")
+					return false;
+				}
+				
+				if(mobile == null || mobile == "")
+				{
+					alert("Enter the mobile number correctly");
+					return false;
+				}
+				else if(isNaN(mobile)){
+						alert("Mobile uses only numbers");
+						return false;
+				}
+				
+				if(email == null || email == "" || atpos < 1 || (dotpos - atpos < 2))
+				{
+					alert("Enter the email correctly");
+					return false;
+				}
+				
+				if(address == null || address == "")
+				{
+					alert("Enter the address correctly");
+					return false;
+				}
+			}
+		</script>
+		<style>
+			body{
+				background-image: url("https://i.pinimg.com/736x/88/8c/7b/888c7b5606b2cc418655e7ba507dd0cb--bookstores-retail.jpg");
+				<!--background-position: center;-->
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+				//background-color: lightgrey;
+			}
+			
+			.column{
+				float: left;
+				width: 30%;
+				padding: 15px;
+			}
+			.row:after{
+				content: "";
+				display: table;
+				clear: both;
+			}
+			.navbar{
+				background-color: black;
+				color: white;
+				padding:16px 56px;
+				text-decoration: none;
+			}
+			
+			a{
+				color: white;
+			}
+			div a:hover:not(.active){
+				background-color:darkgrey;
+				color: black;
+			}
+			.active{
+					background-color: lightgrey;
+					color: black;
+			}
+			label{
+				float: left;
+				width: 190px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		
+		
+		<div class="navbar navbar-default">
+			<div class="row">
+				<div class  = "col-sm-3">
+				<a href="BookstoreHome.html" >Home</a>
+				</div>
+				<div class  = "col-sm-3">
+				<a href="About.html">About</a>
+				</div>
+				<div class  = "col-sm-3">
+				<a href="Books.html">Books</a>
+				</div>
+				<div class  = "col-sm-3">
+				<a class = "active" href="Contact.html">Contact</a>
+				</div>
+			</div>
+		</div>
+		
+		<h1>Assistance and Customer Support</h1>
+		
+		<div class = "container-fluid">
+			<form name = "Contact_Form" onsubmit = "Shiva()">
+			<div>
+				<label for = "Name">Name  : </label>
+				<input type = "text" name = "Name" placeholder = "Enter the name"><br><br>
+			</div>
+			<div>
+				<label for = "Email">Email : </label>
+				<input type = "email" name = "Email" placeholder = "Enter the email address"><br><br>
+			</div>
+			<div>
+				<label for = "Problem">Tell your problem in short : </label>
+				<input type = "text" name = "Problem"><br><br>
+			</div>
+				<input type = "submit" value = "Submit">
+			</form>
+		</div>
+		
+		<div class="column">
+			<h2>United States</h2>
+			<p>Bookstore helpline  866 540-3299<br>
+			Technical assistance (866)961-9253<br>
+           </p>
+		</div>
+		
+	</body>
+</html>

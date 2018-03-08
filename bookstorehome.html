@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+		<style>
+			
+			body{
+				background-image: url("https://www.pexels.com/photo/books-bookshop-bookstore-business-626986/");
+				//background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+				//background-color: lightgrey;
+			}
+			
+			.column{
+				float: left;
+				width: 25%;
+				padding: 15px;
+			}
+			.row:after{
+				content: "";
+				display: table;
+				clear: both;
+			}
+			.navbar{
+				background-color: black;
+				color: white;
+				padding:16px 56px;
+				text-decoration: none;
+			}
+			
+			a{
+				color: white;
+			}
+			div a:hover:not(.active){
+				background-color:darkgrey;
+				color: black;
+			}
+			.active{
+					background-color: lightgrey;
+					color: black;
+			}
+			.sept{
+				width:100%;
+			}
+			.book-description{
+				padding:10px;
+			}
+			.row{
+				width: 100%;
+				padding:15px;
+			}
+			.banner{
+			 width:100%
+			}
+			input[type=text] {
+				float: left;
+				padding: 6px;
+				border: none;
+				margin-right: 16px;
+				font-size: 17px;
+				width: 80%;
+			}
+			.dropdown-content{
+				width:80%;
+				display:none;
+			}
+			.dropdown-content a{
+				width:100%;
+				display:inline-block;
+			}
+			input[type=text]:focus + .dropdown-content{
+				//display:block;
+			}
+			.buy-link{
+				color:#337ab7;
+				padding: 0 10px;
+			}
+			.sept{
+				font-size: 36px;
+				font-weight:bold;
+				padding-left:15px;
+			}
+
+			@media(max-width:1024px){
+				.card_block{
+					width: 50%;
+					text-align: center;
+				}
+				.sept{
+					text-align:center;
+				}
+			}
+			@media(max-width:600px){
+				.card_block{
+					width: 100%;
+					text-align: center;
+				}
+
+			}
+		</style>
+		<script></script>
+	</head>
+<script>
+
+$( document ).ready(function() {
+	$( "input[type=text]" ).focus(function() {
+	$('.dropdown-content').show(); 
+})
+});
+
+</script>
+	<body>
+		
+		<div class="navbar navbar-default">
+			<div class="row">
+				<div class  = "col-sm-3">
+				<a href="BookstoreHome.html" >Home</a>
+				</div>
+				<div class  = "col-sm-3">
+				<a href="About.html">About</a>
+				</div>
+				<div class  = "col-sm-3">
+						<input class="search" type="text" placeholder="Search..">
+						<div class="dropdown-content">
+								<a href="novels.html">Novels</a>
+								<a href="Media.html">media</a>
+								<a href="business.html">Business</a>
+								<a href="biography.html">Biography</a>
+							  </div>
+				</div>
+				<div class  = "col-sm-3">
+				<a href="Contact.html">Contact</a>
+				</div>
+			</div>
+		</div>
+		<div class="row banner" >
+			<img class="banner"src="https://images.pexels.com/photos/626986/pexels-photo-626986.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb" />
+		</div>
+		<div class="row">
+		<div class="column card_block">
+			<h2><a href="novels.html" style = "color:skyblue;text-decoration:underline">Novels</a></h2>
+			<img src="https://i.warosu.org/data/lit/img/0042/06/1382499550664.jpg" style="width:200px;height:250px">
+			
+			<p class="book-description">A novel is any relatively long, work of narrative fiction, normally in prose, and typically published as a book</p>
+			</div>
+		<div class="column card_block">
+			<h2><a href="Media.html" style = "color:skyblue;text-decoration:underline">Media</a></h2>
+			<img src="http://explore.tandfonline.com/uploads/images/journals/covers/RMEA.jpg" style="width:200px;height:250px">
+			
+			<p class="book-description">Social media are computer-mediated technologies that facilitate the creation and sharing of information
+			<p class="book-description"> ideas, career interests and other forms of expression via virtual communities and networks</p>
+			
+		</div>
+		
+		<div class="column card_block">
+			<h2><a href="business.html" style = "color:skyblue;text-decoration:underline">Business</a></h2>
+			<img src="https://prodimage.images-bn.com/pimages/9780060555665_p0_v4_s192x300.jpg" style="width:200px;height:250px">
+			<p class="book-description">The greatest investment advisor of the twentieth century, Benjamin Graham taught and inspired people worldwide. Graham's philosophy of “value investing”—which shields investors from substantial error and teaches them to develop long-term strategies—has made The Intelligent Investor the stock market bible ever since its original publication in 1949.</p>
+		</div>
+
+		<div class="column card_block">
+			<h2><a href="biography.html" style = "color:skyblue;text-decoration:underline">Biography</a></h2>
+			<img src="https://rukminim1.flixcart.com/image/312/312/book/4/6/6/wings-of-fire-an-autobiography-original-imaer2yzjmz5tzuj.jpeg?q=70" style="width:200px;height:250px">
+			<p class="book-description">Wings of Fire: An Autobiography 1st Edition  (English, Paperback, Arun Tiwari, APJ Abdul Kalam)</p>
+		</div>
+	</div>
+		<div class="row">
+			<h2 class="sept">Best Sellers</h2>
+			<div class="column card_block">
+				<img src="https://prodimage.images-bn.com/pimages/9781524763138_p0_v2_s460x700.jpg" style="width:200px;height:250px">
+				<div class="book-desc">
+				<p class="book-description">Becoming by Michelle Obama</p>
+				<a class="buy-link" href="https://www.alibris.com/books">Buy this online</a>
+				</div>
+			</div>
+
+			<div class="column card_block">
+				<img src="https://prodimage.images-bn.com/pimages/9780060559540_p0_v1_s192x300.jpg" style="width:200px;height:250px">
+				<div class="book-desc">
+				<p class="book-description">Leaders: Strategies for Taking Charge by Warren G. Bennis, Burt Nanus
+				 </p>
+				 <a class="buy-link" href="https://www.alibris.com/books">Buy this online</a>
+				 </div>
+			</div>
+
+			<div class="column card_block">
+				<img src="https://prodimage.images-bn.com/pimages/9780802411402_p0_v1_s550x406.jpg" style="width:200px;height:250px">
+				<div class="book-desc">
+				<p class="book-description">The 5 Love Languages Singles Edition by Gary Chapman
+				</p>
+				<a class="buy-link" href="https://www.alibris.com/books">Buy this online</a>
+			</div>
+		</div>
+			<div class="column card_block">
+				<img src="https://prodimage.images-bn.com/pimages/9780062301253_p0_v3_s192x300.jpg" style="width:200px;height:250px">
+				<div class="book-desc">
+				<p class="book-description">Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future by Ashlee Vance</p>
+				<a class="buy-link" href="https://www.alibris.com/books">Buy this online</a>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

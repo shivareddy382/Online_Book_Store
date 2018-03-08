@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>document.createElement("Bookstore")</script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+			body{
+				background-image: url("https://i.pinimg.com/736x/88/8c/7b/888c7b5606b2cc418655e7ba507dd0cb--bookstores-retail.jpg");
+				background-position: center;
+				background-repeat: no-repeat;
+				//background-size: percentage;
+				background-size: 50%;
+				//background-color: grey;
+			}
+			Bookstore{
+				display: block;
+				//background-color: green;
+				padding:250px;
+				//width: 650px;
+				font-size: 30px;
+			}
+			.column{
+				float: left;
+				width: 30%;
+				padding: 15px;
+			}
+			.row:after{
+				content: "";
+				display: table;
+				clear: both;
+			}
+			.navbar{
+				background-color: black;
+				color: white;
+				padding:16px 56px;
+				text-decoration: none;
+			}
+			
+			a{
+				color: white;
+			}
+			div a:hover:not(.active){
+				background-color:darkgrey;
+				color: black;
+			}
+			.active{
+					background-color: lightgrey;
+					color: black;
+			}			
+		</style>
+	</head>
+	
+	<body>
+		
+		<div class="navbar navbar-default">
+			<div class="row">
+				<div class  = "col-sm-3">
+				<a class = "active" href="bookstoreHome.html" >Home</a>
+				</div>
+				<div class  = "col-sm-3">
+				<a href="About.html">About</a>
+				</div>
+				<div class  = "col-sm-3">
+				<a href="books.html">Books</a>
+				</div>
+				<div class  = "col-sm-3">
+				<a href="Contact.html">Contact</a>
+				</div>
+			</div>
+		</div>
+		<Bookstore style="color:Tomato;""text-align:center">WELCOME TO BOOKSTORE</Bookstore>
+		<Bookstore style=>WELCOME TO BOOKSTORE</Bookstore>
+	</body>
+</html>

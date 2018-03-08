@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script>document.createElement("Bookstore")</script>
+		<style>
+			body{
+				background-color: lightgrey;
+				background-image: url("https://images.pexels.com/photos/256421/pexels-photo-256421.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			Bookstore{
+				background-color: lightgrey;
+				font-size: 25px;
+				//width: 100px;
+			}
+					
+			.column{
+				float: left;
+				width: 30%;
+				padding: 15px;
+			}
+			.row:after{
+				content: "";
+				display: table;
+				clear: both;
+			}
+			.navbar{
+				background-color: black;
+				color: white;
+				padding:16px 56px;
+				text-decoration: none;
+			}
+			
+			a{
+				color: white;
+			}
+			.active{
+					background-color: lightgrey;
+					color: black;
+			}	
+			div a:hover:not(.active){
+				background-color:darkgrey;
+				color: black;
+			}
+			.active{
+					background-color: lightgrey;
+					color: black;
+			}		
+			.intro-text-block{
+				width :80%;
+				margin: 0 auto;
+
+			}	
+			.about-us{
+				color:cyan;
+			}
+		</style>
+	</head>
+	
+	<body>
+	
+		<div class="navbar navbar-default">
+			<div class="row">
+				<div class  = "col-sm-3">
+				<a href="BookstoreHome.html" >Home</a>
+				</div>
+				<div class  = "col-sm-3">
+				<a class = "active" href="About.html">About</a>
+				</div>
+				<div class  = "col-sm-3">
+				<a href="Books.html">Books</a>
+				</div>
+				<div class  = "col-sm-3">
+				<a href="Contact.html">Contact</a>
+				</div>
+			</div>
+		</div>
+		
+		<Bookstore>
+		<script>
+	function myFunction() {
+    document.getElementById("myp1").style.color = "white";
+    document.getElementById("myp2").style.color = "#ff0000";
+	
+	</script>
+	<div class="intro-text-block">
+		
+		<p class="about-us">Founded in 1957 a stone’s throw from Sloane Square, John Sandoe Books Ltd is one of London’s foremost and best-loved independent bookshops. Its beautiful eighteenth century premises is home to an astonishing 30,000 titles, carefully selected by staff with nearly 100 years of bookselling – and reading – between them, making Sandoe’s a legend among bibliophiles in London and around the world. We offer a range of services, from our renowned quarterly catalogues, mail order and subscriptions to creating and maintaining libraries, both public and private.</p></br>
+		
+		<p id="myp2"></p></br>
+	</div>
+		</Bookstore>
+	</body>
+	
+	
+</html>

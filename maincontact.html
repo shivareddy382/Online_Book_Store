@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Form</title>
+		<script>
+			function Shiva()
+			{
+				var name = document.forms["Contact_Form"]["Name"].value;
+				var spl = /^[a-zA-Z]+$/;
+				var mobile = document.forms["Contact_Form"]["Mobile_Number"].value;
+				var email = document.forms["Contact_Form"]["Email"].value;
+				var address = document.forms["Contact_Form"]["Address"].value;
+				var problem = document.forms["Contact_Form"]["Problem"].value;
+				if(name == null || name == "")
+				{
+					alert("Enter the name");
+					return false;
+				}
+				else if(!name.match(spl))
+				{
+					alert("Name must use alphabetics only");
+					return false;
+				}
+				
+				if(mobile == null || mobile == "")
+				{
+					alert("Enter the mobile number correctly");
+					return false;
+				}
+				else if(isNaN(mobile)){
+						alert("Mobile uses only numbers");
+						return false;
+				}
+				
+				if(email == null || email == "")
+				{
+					alert("Enter the email correctly");
+					return false;
+				}
+				
+				if(address == null || address == "")
+				{
+					alert("Enter the address correctly");
+					return false;
+				}
+			}
+		</script>
+		<style>
+			body{
+				background-image: url("https://i.pinimg.com/736x/88/8c/7b/888c7b5606b2cc418655e7ba507dd0cb--bookstores-retail.jpg");
+				//background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+				//background-color: lightgrey;
+			}
+			ul{
+				list-style-type: none;
+				margin: 0;
+				padding:0;
+				//width: 750px;
+				overflow: hidden;
+				background-color: black;
+			}
+			li{
+				float: left;
+			}
+			li a{
+				display: block;
+				color: white;
+				padding:16px 56px;
+				//padding-top: 20px;
+				text-decoration: none;	
+			}
+			li a:hover:not(.active){
+				background-color:lightgrey;
+				color: black;
+			}
+			.active{
+					background-color: lightgrey;
+					color: black;
+			}
+			.column{
+				float: left;
+				width: 30%;
+				padding: 15px;
+			}
+			.row:after{
+				content: "";
+				display: table;
+				clear: both;
+			}
+		</style>
+	</head>
+	
+	<body>
+		
+		<ul>
+			<li style="float:left"><a href="BookstoreHome.html">Home</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="Books.html">Books</a></li>
+			<li><a class="active" href="Contact.html">Contact</a></li>
+		</ul>
+		<h1>Product and Technical Support</h1>
+		
+		<form name = "Contact_Form" onsubmit = "Shiva()">
+			Name:<input type = "text" name = "Name"><br><br>
+			Phone Number:<input type = "tel" name = "Mobile_Number"><br><br>
+			Email:<input type = "email" name = "Email"><br><br>
+			Address:<input type = "text" name = "Address"><br><br>
+			Tell your problem in short:<input type = "text" name = "Problem"><br><br>
+			<input type = "submit" value = "Submit">
+		</form>
+		
+		<div class="column">
+			<h2>United States</h2>
+			<p>Bookstore helpline  866 540-3299<br>
+			 Book store Technical assistance (866)961-9253<br>
+           </p>
+			</div>
+		
+	</body>
+</html>

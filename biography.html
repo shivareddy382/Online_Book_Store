@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function goBack(){
+				window.history.back("file:///C:/Users/shivareddy/Desktop/web%20apps%20final%20pro/Books.html");
+			}
+		</script>
+		<style>
+			body{
+
+				background-image: url("https://i.pinimg.com/736x/88/8c/7b/888c7b5606b2cc418655e7ba507dd0cb--bookstores-retail.jpg")
+				//background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+				//background-color: lightgrey;
+			}
+			img{
+				display: block;
+				margin: 0 auto;
+			}
+			ul{
+				list-style-type: none;
+				margin: 0;
+				padding:0;
+				//width: 750px;
+				overflow: hidden;
+				background-color: black;
+			}
+			li{
+				float: left;
+			}
+			li a{
+				display: block;
+				color: white;
+				padding:16px 56px;
+				//padding-top: 20px;
+				text-decoration: none;	
+			}
+			li a:hover:not(.active){
+				background-color:lightgrey;
+				color: black;
+			}
+			.active{
+					background-color: lightgrey;
+					color: black;
+			}
+			.column{
+				float: left;
+				width: 25%;
+				padding: 15px;
+			}
+			.row:after{
+				content: "";
+				display: table;
+				clear: both;
+			}
+            .row{
+				width:100%;
+				padding:0 15px;
+			}
+			.book-desc{
+				text-align:center;
+			}
+			@media(max-width:15px){
+				.column{
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+	
+	<body>
+		
+		<ul>
+			<li style="float:left"><a class="active" href="Bookstorehome.html">Home</a></li>
+		</ul>
+		<button style="float:right; font-size: 25px" onclick = "goBack()">Back</button>
+		<img src="https://rukminim1.flixcart.com/image/312/312/book/4/6/6/wings-of-fire-an-autobiography-original-imaer2yzjmz5tzuj.jpeg?q=70" style="width:250px;height:400px"><br>
+		
+		<div class="row book-desc">
+			
+				<p>Wings of Fire: An Autobiography 1st Edition  (English, Paperback, Arun Tiwari, APJ Abdul Kalam)</p>
+				<a href="https://www.alibris.com/books">Click here to Buy in Online stores</a> 
+			</div>
+			</body>
+</html>
+
+
